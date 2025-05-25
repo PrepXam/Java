@@ -9,8 +9,6 @@ import com.java.ne_starter.dtos.response.ApiResponse;
 import com.java.ne_starter.services.interfaces.AuthenticationService;
 import com.java.ne_starter.services.interfaces.UserService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

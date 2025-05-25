@@ -1,20 +1,14 @@
 package com.java.ne_starter.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.java.ne_starter.models.Base;
-import com.java.ne_starter.models.Role;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
-import java.math.BigInteger;
 import java.time.LocalDateTime;
 import java.util.Set;
 

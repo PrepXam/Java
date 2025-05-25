@@ -5,7 +5,6 @@ import com.java.ne_starter.dtos.owner.OwnerResponseDto;
 import com.java.ne_starter.dtos.response.ApiResponse;
 import org.springframework.http.ResponseEntity;
 
-import java.math.BigInteger;
 import java.util.List;
 import java.util.UUID;
 

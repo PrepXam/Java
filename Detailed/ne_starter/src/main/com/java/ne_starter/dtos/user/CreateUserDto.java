@@ -1,7 +1,6 @@
 package com.java.ne_starter.dtos.user;
 
 import com.java.ne_starter.dtos.auth.RegisterDto;
-import com.java.ne_starter.enumerations.user.EUserRole;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

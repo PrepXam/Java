@@ -9,6 +9,8 @@ import java.time.LocalDateTime;
 public class OwnershipHistoryDto {
 
     private String ownerName;
+    private String prevOwnerName;
+    private String prevOwnerNationalId;
     private String ownerNationalId;
     private LocalDateTime startDate;
     private LocalDateTime endDate;

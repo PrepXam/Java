@@ -1,4 +1,4 @@
-package com.java.ne_starter;
+package java.com.java.ne_starter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

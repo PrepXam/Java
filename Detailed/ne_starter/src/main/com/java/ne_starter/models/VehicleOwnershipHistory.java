@@ -22,6 +22,11 @@ public class VehicleOwnershipHistory extends Base{
     @JoinColumn(name = "owner_id")
     private Owner owner;
 
+
+    @ManyToOne
+    @JoinColumn(name = "prev_owner_id")
+    private Owner prevOwner;
+
     @Column(name = "start_date", nullable = false)
     private LocalDateTime startDate;
 

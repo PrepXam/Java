@@ -7,6 +7,15 @@ import com.java.ne_starter.enumerations.plate.PlateStatus;
 import com.java.ne_starter.exceptions.NotFoundException;
 import com.java.ne_starter.models.*;
 import com.java.ne_starter.repositories.*;
+
+import com.java.ne_starter.models.Owner;
+import com.java.ne_starter.models.PlateNumber;
+import com.java.ne_starter.models.Vehicle;
+import com.java.ne_starter.models.VehicleTransfer;
+import com.java.ne_starter.repositories.OwnerRepository;
+import com.java.ne_starter.repositories.PlateNumberRepository;
+import com.java.ne_starter.repositories.VehicleRepository;
+import com.java.ne_starter.repositories.VehicleTransferRepository;
 import com.java.ne_starter.services.interfaces.VehicleHistoryService;
 import com.java.ne_starter.services.interfaces.VehicleTransferService;
 import lombok.RequiredArgsConstructor;

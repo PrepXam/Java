@@ -51,8 +51,10 @@ public class VehicleHistoryServiceImpl implements VehicleHistoryService {
         VehicleOwnershipHistory newHistory = new VehicleOwnershipHistory();
         newHistory.setVehicle(vehicleRepository.getReferenceById(vehicleId));
         newHistory.setOwner(ownerRepository.getReferenceById(newOwnerId));
-        newHistory.setStartDate(transferDate);
+        newHistory.setPrevOwner(ownerRepository.getReferenceById(previousOwnerId));
+        newHistory.setStartDate(LocalDateTime.now());
         newHistory.setPurchasePrice(transferPrice);
+        newHistory.setEndDate(transferDate);
 
         historyRepository.save(newHistory);
         log.info("Created new ownership record: {}", newHistory.getId());
@@ -71,7 +73,6 @@ public class VehicleHistoryServiceImpl implements VehicleHistoryService {
     @Override
     @Transactional(readOnly = true)
     public List<OwnershipHistoryDto> getVehicleHistory(String identifier) {
-        // First try to find by vehicle ID (UUID)
         try {
             UUID vehicleId = UUID.fromString(identifier);
             return getHistoryByVehicleId(vehicleId);

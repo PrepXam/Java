@@ -2,7 +2,6 @@ package com.java.ne_starter.services.interfaces;
 
 import com.java.ne_starter.dtos.history.OwnershipHistoryDto;
 import com.java.ne_starter.models.VehicleOwnershipHistory;
-import org.springframework.context.annotation.Bean;
 
 
 import java.math.BigDecimal;
